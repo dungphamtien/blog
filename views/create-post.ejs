@@ -1,0 +1,14 @@
+<% include _header %>
+<%- include('flash'); %>
+<form action="/create-post" method="POST">
+    <label>
+        <strong>Title</strong>
+        <input type="text" name="title">
+    </label>
+    <label>
+        <h4>Content</h4>
+        <textarea name="content"></textarea>
+    </label>
+    <button>Create Post</button>
+</form>
+<% include _footer %>

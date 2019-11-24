@@ -1,0 +1,18 @@
+<% include _header %>
+<%- include('flash'); %>
+<form action="/register" method="POST">
+    <h1>Register</h1>
+    <label>
+        <strong>Username:</strong>
+        <input type="text" name="username">
+    </label>
+    <label>
+        <strong>Password:</strong>
+        <input type="password" name="password">
+    </label>
+    <button>Register</button>
+</form>
+<nav>
+    <a href="/login">Login</a>
+</nav>
+<% include _footer %>

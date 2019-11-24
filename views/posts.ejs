@@ -1,0 +1,12 @@
+<% include _header %>
+<h2>All posts</h2>
+<% posts.forEach(function(post){ %>
+    <div class="post">
+        <h2><a href="/posts/<%= post._id %>"><%= post.title %></a></h2>
+              <span class="meta">By <%= post.username %> on <%= post.date %> </span>
+        <div class="post_content">
+                <%= post.content %>
+            </div>
+    </div>
+    <% }) %>
+<% include _footer %>

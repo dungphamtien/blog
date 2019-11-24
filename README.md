@@ -1,2 +1,0 @@
-# blog
-Express simple blog
